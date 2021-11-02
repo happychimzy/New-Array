@@ -13,8 +13,8 @@ function getPosts() {
             data.forEach(e => {
                 html += `
           <div class="col-md-4 mb-4">
-          <div class="card h-100">
-          <div class="card-body">
+          <div class="card h-100 m-3">
+          <div class="card-body ">
             <h5 class="post-title">${e.title}</h5>
             <p class="post-body">${e.body}</p>
             <div class ="d-flex justify-content-end">
@@ -51,12 +51,12 @@ function content(id) {
             html = `
           <div class="col-md-4 mb-4">
           <div class="card h-100">
-          <div class="card-body">
+          <div class="card-body bg-primary text-white">
             <h5 class="post-title">${e.title}</h5>
             <p class="post-body">${e.body}</p>
             <div class ="d-flex justify-content-end">
-            <button class= "btn btn-danger cc" type='submit'
-            onclick='post(${e.id})'>Push</button>
+            <a href="index.html"><button class= "btn btn-danger cc" type='submit'
+            >home page</button></a>
             </div>
           </div>
         </div>
